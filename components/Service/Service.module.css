@@ -1,0 +1,7 @@
+
+.circle {
+    background-color: var(--green-primary);
+    width: 70px;
+    height: 70px;
+    @apply rounded-t-full flex items-center justify-center p-3;
+}
