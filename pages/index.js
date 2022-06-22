@@ -39,8 +39,8 @@ export default function Home() {
           Presso lo Sportello immigrazione potrete disporre dei seguenti
           servizi:
         </h1>
-        {services.map(({ icon, text }) => (
-          <Service text={text} icon={icon} />
+        {services.map(({ icon, text }, index) => (
+          <Service key={index} text={text} icon={icon} />
         ))}
         <div className="flex justify-center w-screen py-5">
           <Earth />
