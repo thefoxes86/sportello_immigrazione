@@ -21,6 +21,16 @@
     color: var(--green-primary);
     @apply text-2xl text-left py-9;
   }
+  .titleAra {
+    color: var(--green-primary);
+    @apply text-2xl text-right py-9;
+  }
+
+  .select__flags {
+    position: absolute !important;
+    @apply right-0 top-0;
+    border: 0 !important;
+  }
 
 
 .footer {
