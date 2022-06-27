@@ -1,0 +1,4 @@
+.square {
+    @apply w-11/12 px-5 py-5 flex flex-col justify-center items-start text-black font-bold mt-10 gap-5;
+    border: 2px solid var(--green-primary);
+}

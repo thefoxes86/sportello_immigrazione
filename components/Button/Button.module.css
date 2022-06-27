@@ -1,0 +1,4 @@
+.button {
+    @apply w-11/12 px-5 py-5 flex justify-center items-center uppercase text-white mt-10;
+    background-color: var(--green-primary);
+}
