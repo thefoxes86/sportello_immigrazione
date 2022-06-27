@@ -1,42 +1,35 @@
 import Layout from '../../components/Layout'
-import Title from '../../components/Title'
-import { getAllServices, getTheProps } from '../utils/routes'
-import { useStore } from 'zustand'
-import { services, lang } from '../../content/services'
-import InternalServices from '../../components/InternalServices'
-import Button from '../../components/Button'
-import Square from '../../components/Square'
+import { lang } from '../../content/services'
+import getAllServices from '../../utils/getAllServices'
 
-const Post = props => {
+const Post = () => {
   return (
     <Layout>
-      <InternalServices title={props.title} text="" />
-      {props.data.numberToCall && <Square />}
-      <Button text="ALL SERVICES" />
+      <h1>Post</h1>
     </Layout>
   )
 }
 
-export async function getStaticPaths() {
-  let paths = []
-  lang.map(lang => {
-    paths.push(...getAllServices(lang))
-  })
-
+export function getServerSideProps() {
+  const zustandStore = initializeStore()
   return {
-    paths,
-    fallback: false,
+    props: {
+      // the "stringify and then parse again" piece is required as next.js
+      // isn't able to serialize it to JSON properly
+      initialZustandState: JSON.parse(JSON.stringify(zustandStore.getState())),
+    },
   }
 }
 
-export async function getStaticProps({ params, id }) {
-  // Fetch necessary data for the blog post using params.id
-  console.log('PARAMS', params, id)
-  const lang = 'ita'
-  const props = getTheProps(params.id, lang)
-  return {
-    props: props,
-  }
-}
+// export function getStaticPaths() {
+//   let paths = getAllServices('ita')
+//   //   lang.map(el => {
+//   //     paths.push(getAllServices(el))
+//   //   })
+//   return {
+//     paths: paths,
+//     fallback: false,
+//   }
+// }
 
 export default Post

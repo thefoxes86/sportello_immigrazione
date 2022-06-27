@@ -6,7 +6,7 @@ import Ita from '../images/ita.svg'
 import Flag from '../components/Flag/Flag'
 import Title from '../components/Title'
 import Layout from '../components/Layout'
-import { useStore } from './utils/zustand'
+import { useStore } from '../utils/zustand'
 
 export default function Home() {
   const lang = useStore(state => state.lang)

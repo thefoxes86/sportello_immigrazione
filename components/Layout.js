@@ -18,7 +18,7 @@ import Ara from '../images/ara.svg'
 import Alb from '../images/alb.svg'
 import Cin from '../images/cin.svg'
 import PorteAperte from '../images/porteaperte.svg'
-import { useStore } from '../pages/utils/zustand'
+import { useStore } from '../utils/zustand'
 import Link from 'next/link'
 
 const options = [
