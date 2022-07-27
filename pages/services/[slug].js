@@ -18,11 +18,9 @@ const Post = ({ data }) => {
             <>
               <h2 className={styles.titleDocumenti}>DOCUMENTI NECESSARI:</h2>
               {detail.data.documenti.necessari.map((item, index) => (
-                <a href={item.link}>
-                  <p className={styles.itemList}>
-                    <span className={styles.pointList}></span> {item.title}
-                  </p>
-                </a>
+                <p key={index} className={styles.itemList}>
+                  <span className={styles.pointList}></span> {item.title}
+                </p>
               ))}
             </>
           )}
@@ -32,11 +30,9 @@ const Post = ({ data }) => {
                 IN CASO DI LAVORO DOMESTICO :
               </h2>
               {detail.data.documenti.domestico.map((item, index) => (
-                <a href={item.link}>
-                  <p className={styles.itemList}>
-                    <span className={styles.pointList}></span> {item.title}
-                  </p>
-                </a>
+                <p key={index} className={styles.itemList}>
+                  <span className={styles.pointList}></span> {item.title}
+                </p>
               ))}
             </>
           )}
@@ -46,7 +42,7 @@ const Post = ({ data }) => {
                 IN CASO DI SOCIO DIPENDENTE :
               </h2>
               {detail.data.documenti.dipendente.map((item, index) => (
-                <p className={styles.itemList}>
+                <p key={index} className={styles.itemList}>
                   <span className={styles.pointList}></span> {item.title}
                 </p>
               ))}
