@@ -1,0 +1,63 @@
+
+
+  
+  .titleSingle {
+    color: var(--green-primary);
+    @apply text-2xl text-left py-9;
+  }
+  .titleAra {
+    color: var(--green-primary);
+    @apply text-2xl text-right py-9;
+  }
+
+  .select__flags {
+    position: absolute !important;
+    @apply right-0 top-0;
+    border: 0 !important;
+  }
+
+  .callSquare {
+    @apply border-2 p-4 my-5 w-full;
+    border-color: var(--green-primary)
+  }
+  .callSquare p {
+    @apply text-left font-bold my-2;
+  }
+
+  .cameBackButton {
+    @apply flex justify-center align-middle uppercase font-light text-white my-5 w-full py-8 text-xl;
+    background-color:  var(--green-primary);
+  }
+
+  .containerDocumenti {
+    @apply flex flex-col justify-center items-start my-5;
+  }
+  .titleDocumenti {
+    @apply text-xl text-left uppercase text-black border-b-2 w-screen px-8 mt-10;
+    border-color: var(--green-primary);
+  }
+  .itemList {
+    @apply flex justify-start items-center my-4 w-full px-8 text-lg;
+  }
+  .pointList {
+    @apply rounded-3xl mr-2;
+    width: 20px;
+    height: 20px;
+    min-width: 20px;
+    background-color: var(--green-primary);
+  }
+
+  .containerAdviceEmpty {
+    @apply flex flex-col justify-center items-center my-5 border-2 text-black font-bold p-5 w-full;
+    border-color: var(--green-primary);
+  }
+  .containerAdviceFull {
+    @apply flex flex-col justify-center items-center my-5 text-white font-bold p-5 w-full;
+    background-color: var(--green-primary); 
+  }
+
+
+
+
+
+

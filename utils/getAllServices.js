@@ -14,4 +14,9 @@ const getAllServices = lang => {
   return arraySlug
 }
 
-export default getAllServices
+const getSingleService = (lang, slug) => {
+  const data = services[lang].find(el => el.slug === slug)
+  return data
+}
+
+export { getAllServices, getSingleService }
