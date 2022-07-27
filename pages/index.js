@@ -18,7 +18,15 @@ export default function Home() {
       </div>
       <Title lang={lang.value} />
       {services[lang.value].map(({ icon, text, slug }, index) => {
-        return <Service key={index} text={text} icon={icon} slug={slug} />
+        return (
+          <Service
+            key={index}
+            text={text}
+            icon={icon}
+            slug={slug}
+            lang={lang.value}
+          />
+        )
       })}
     </Layout>
   )
