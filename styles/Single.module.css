@@ -55,6 +55,9 @@
     @apply flex flex-col justify-center items-center my-5 text-white font-bold p-5 w-full;
     background-color: var(--green-primary); 
   }
+  .titleH3 {
+    @apply font-bold my-4 text-lg px-8 text-black;
+  }
 
 
 

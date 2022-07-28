@@ -223,7 +223,120 @@ const services = {
       slug: 'ricongiungimento-e-coesione-familiare',
       text: 'Ricongiungimento e coesione familiare',
       data: {
-        documenti: {},
+        documenti: {
+          necessari: [
+            { title: 'PERMESSO / CARTA DI SOGGIORNO', url: '#' },
+            { title: 'PASSAPORTO', url: '#' },
+            { title: 'PASSAPORTO DEL FAMILIARE', url: '#' },
+            { title: 'COPIA NULLA OSTA', url: '#' },
+          ],
+          alloggio: [
+            { title: 'CERTIFICATO IDONEITÀ ALLOGGIATIVA2', url: '#' },
+            {
+              title:
+                'CONTRATTO PROPRIETÀ oppure CONTRATO LOCAZIONE oppure COMODATO D’USO GRATUITO oppure SUCCESSIONE oppure VISURA CATASTALE (se il richiedente è ospite) ',
+              url: '#',
+            },
+            {
+              title:
+                'MODELLO S2: OSPITALITÀ PER I PARENTI compilato e firmato dall’intestatario del contratto di locazione (da tutti gli intestatari se più di uno) e garanzia compilato e firmato da persona che garantisce il sostenimento economico.',
+              url: '#',
+            },
+            {
+              title: 'DOCUMENTO IDENTITÀ DEI FIRMATARI MODELLO S1 E S2',
+              url: '#',
+            },
+          ],
+          lavoro: {
+            dipendenti: [
+              { title: 'ULTIMA DICHIARAZIONE REDDITI', url: '#' },
+              { title: 'UNILAV OPPURE INSTAURAZIONE', url: '#' },
+              { title: 'CONTRATTO LAVORO', url: '#' },
+              { title: 'ULTIMA BUSTA PAGA', url: '#' },
+              { title: 'DOCUMENTO IDENTITÀ DATORE DI LAVORE', url: '#' },
+              { title: 'MODELLO S34 ', url: '#' },
+            ],
+            domestici: [
+              { title: 'COMUNICAZIONE ASSUNZIONE INPS', url: '#' },
+              { title: 'MODELLO S3', url: '#' },
+              {
+                title:
+                  'DICHIARAZIONE DEL DATORE DI LAVORO SUL REDDITO RELATIVO ALL’ANNO PRECEDENTE',
+                url: '#',
+              },
+              {
+                title:
+                  'BOLLETTINO DI VERSAMENTO DEI CONTRIBUTI inps TRIMESTRE PRECEDENTE',
+                url: '#',
+              },
+              { title: 'DOCUMENTO IDENTITÀ DEL DATORE DI LAVORO', url: '#' },
+            ],
+            individuale: [
+              {
+                title:
+                  'CERTIFICATO CAMERA DI COMMERCIO oppure VISURA CAMERALE DELLA SOCIETÀ',
+                url: '#',
+              },
+              { title: 'ATTRIBUZIONE PARTITA IVA', url: '#' },
+              { title: 'LICENZA COMUNALE (dove prevista)', url: '#' },
+              { title: 'MODELLO UNICO', url: '#' },
+              {
+                title:
+                  'RICEVUTA DI PRESENTAZIONE OPPURE RELAZIONE DI BILANCIO DEL COMMERCIALISTA oppure BILANCIO',
+                url: '#',
+              },
+            ],
+            societa: [
+              {
+                title:
+                  'CERTIFICATO CAMERA DI COMMERCIO oppure VISURA CAMERALE DELLA SOCIETÀ',
+                url: '#',
+              },
+              { title: 'ATTRIBUZIONE PARTITA IVA DELLA SOCIETÀ', url: '#' },
+              { title: 'MODELLO UNICO ', url: '#' },
+              {
+                title:
+                  'RICEVUTA DI PRESENTAZIONE oppure RELAZIONE DI BILANCIO DEL COMMERCIALISTA oppure BILANCIO',
+                url: '#',
+              },
+            ],
+            progetto: [
+              {
+                title: 'CONTRATTO DI LAVORO (con durata prestazione) ',
+                url: '#',
+              },
+              {
+                title:
+                  'DICHIARAZIONE DEL DATORE DI LAVORO  DI CUI RISULTI ATTUALITÀ DEL LAVORO',
+                url: '#',
+              },
+              { title: 'DICHIARAZIONE GESTIONE SEPARATA ALL’INPS', url: '#' },
+              { title: 'MODELLO UNICO', url: '#' },
+            ],
+            socio: [
+              { title: 'VISURA CAMERALE DELLA COPERATIVA', url: '#' },
+              { title: 'ATTRIBUZIONE PARTITA IVA COOP', url: '#' },
+              {
+                title: 'DICHIARAZIONE DEL PRESIDENTE DELLA COOPERATIVA',
+                url: '#',
+              },
+              { title: 'FOTOCOPIA DEL LIBRO SOCI', url: '#' },
+              { title: 'MODELLO UNICO O CUD', url: '#' },
+              { title: 'LIBERI PROFESSIONISTI ', url: '#' },
+              { title: 'ISCRIZIONE ALL’ALBO ', url: '#' },
+              {
+                title: 'DICHIARAZIONE DEL DATORE DI RELATIVO SUL REDDITO ANNO',
+                url: '#',
+              },
+            ],
+          },
+        },
+        adviceFull: {
+          text: 'RICONGIUMENTO DI ULTRA 65 ANNI:  consegnare dichiarazione che attesti la volontà a stipulare l’assicurazione sanitaria. Entro 8 giorni dall’entrata in Italia dovrà essere presentata un’assicurazione sanitaria (stipulata in Italia e senza scadenza) che garantisca la copertura per tutti i rischi sul territorio nazionale. ',
+        },
+        adviceEmpty: {
+          text: 'Al momento della consegna del KIT l’interessato/a dovrà presentarsi allo sportello postale MUNITO DI MARCA DA BOLLO DA 16,00€ e sarà richiesto il pagamento di un bollettino postale di importo variabile a seconda della tipologia di richiesta effettuata.',
+        },
         numberToCall: false,
       },
     },

@@ -56,6 +56,86 @@ const Post = ({ data }) => {
                   ))}
                 </>
               )}
+              {detail.data.documenti.alloggio && (
+                <>
+                  <h2 className={styles.titleDocumenti}>
+                    DOCUMENTI PER ALLOGGIO :
+                  </h2>
+                  {detail.data.documenti.alloggio.map((item, index) => (
+                    <p key={index} className={styles.itemList}>
+                      <span className={styles.pointList}></span> {item.title}
+                    </p>
+                  ))}
+                </>
+              )}
+              {detail.data.documenti.lavoro && (
+                <>
+                  <h2 className={styles.titleDocumenti}>
+                    DOCUMENTI ATTESTAZIONE LAVORATIVA :
+                  </h2>
+                  {detail.data.documenti.lavoro.dipendenti && (
+                    <h3 className={styles.titleH3}>Lavoratori dipendenti</h3>
+                  )}
+                  {detail.data.documenti.lavoro.dipendenti.map(
+                    (item, index) => (
+                      <p key={index} className={styles.itemList}>
+                        <span className={styles.pointList}></span> {item.title}
+                      </p>
+                    )
+                  )}
+
+                  {detail.data.documenti.lavoro.domestici && (
+                    <h3 className={styles.titleH3}>Lavoratori domestici</h3>
+                  )}
+                  {detail.data.documenti.lavoro.domestici.map((item, index) => (
+                    <p key={index} className={styles.itemList}>
+                      <span className={styles.pointList}></span> {item.title}
+                    </p>
+                  ))}
+
+                  {detail.data.documenti.lavoro.individuale && (
+                    <h3 className={styles.titleH3}>
+                      Lavoratori autonomi ditta individuale{' '}
+                    </h3>
+                  )}
+                  {detail.data.documenti.lavoro.individuale.map(
+                    (item, index) => (
+                      <p key={index} className={styles.itemList}>
+                        <span className={styles.pointList}></span> {item.title}
+                      </p>
+                    )
+                  )}
+
+                  {detail.data.documenti.lavoro.societa && (
+                    <h3 className={styles.titleH3}>Società</h3>
+                  )}
+                  {detail.data.documenti.lavoro.societa.map((item, index) => (
+                    <p key={index} className={styles.itemList}>
+                      <span className={styles.pointList}></span> {item.title}
+                    </p>
+                  ))}
+
+                  {detail.data.documenti.lavoro.progetto && (
+                    <h3 className={styles.titleH3}>
+                      Collaborazione a progetto
+                    </h3>
+                  )}
+                  {detail.data.documenti.lavoro.progetto.map((item, index) => (
+                    <p key={index} className={styles.itemList}>
+                      <span className={styles.pointList}></span> {item.title}
+                    </p>
+                  ))}
+
+                  {detail.data.documenti.lavoro.socio && (
+                    <h3 className={styles.titleH3}>Socio Lavoratore</h3>
+                  )}
+                  {detail.data.documenti.lavoro.socio.map((item, index) => (
+                    <p key={index} className={styles.itemList}>
+                      <span className={styles.pointList}></span> {item.title}
+                    </p>
+                  ))}
+                </>
+              )}
             </div>
           )}
 
