@@ -113,8 +113,8 @@ const services = {
     {
       id: 5,
       icon: <Cittadinanza />,
-      slug: 'citadinanza-italiana',
-      text: 'Citadinanza italiana',
+      slug: 'cittadinanza-italiana',
+      text: 'Cittadinanza italiana',
       data: {
         documenti: {
           necessari: [
@@ -528,7 +528,7 @@ const services = {
       id: 16,
       icon: <Flussi />,
       slug: 'emersione-e-decreto-flussi',
-      text: 'Emersion and flows decree',
+      text: 'EMERSIONE E DECRETO FLUSSI',
     },
     {
       id: 17,
@@ -604,9 +604,11 @@ const services = {
     {
       icon: <Studi />,
       slug: 'traduzione-e-assistenza-nel-riconoscimento-dei-titoli-di-studio',
-      text: '',
+      text: 'признание академической квалификации',
     },
     {
+      icon: <Famiglia />,
+      slug: 'ricongiungimento-e-coesione-familiare',
       text: 'перевод и легализация документов необходимых для воссоединения семьи',
     },
     {
@@ -633,7 +635,7 @@ const services = {
     {
       icon: <Flussi />,
       slug: 'emersione-e-decreto-flussi',
-      text: 'помощь в отслеживании выхода декретов Flussi ( рабочая иммиграция)',
+      text: 'EMERSIONE E DECRETO FLUSSI',
     },
     {
       icon: <Legale />,
@@ -708,6 +710,8 @@ const services = {
       text: 'Tradução e reconhecimento de qualificações',
     },
     {
+      icon: <Famiglia />,
+      slug: 'ricongiungimento-e-coesione-familiare',
       text: 'Reunificação familiar',
     },
     {
@@ -734,7 +738,7 @@ const services = {
     {
       icon: <Flussi />,
       slug: 'emersione-e-decreto-flussi',
-      text: 'Emersão e decreto de fluxos',
+      text: 'EMERSIONE E DECRETO FLUSSI',
     },
     {
       icon: <Legale />,
@@ -771,7 +775,7 @@ const services = {
     {
       icon: <Sprar />,
       slug: 'richiesta-inserimento-sprar-sai',
-      text: '',
+      text: 'Solicitud de inserciÓN SPRAR/SAI',
     },
     {
       icon: <Casa />,
@@ -809,6 +813,8 @@ const services = {
       text: 'Traducción y reconocimiento de títulos',
     },
     {
+      icon: <Famiglia />,
+      slug: 'ricongiungimento-e-coesione-familiare',
       text: 'Reunificación familiar',
     },
     {
@@ -835,7 +841,7 @@ const services = {
     {
       icon: <Flussi />,
       slug: 'emersione-e-decreto-flussi',
-      text: 'Decreto de flujos ( non so cosa sia l’emersione)',
+      text: 'EMERSIONE E DECRETO FLUSSI',
     },
     {
       icon: <Legale />,
@@ -910,6 +916,8 @@ const services = {
       text: 'Perkthim dhe njohja e kualifikimeve ',
     },
     {
+      icon: <Famiglia />,
+      slug: 'ricongiungimento-e-coesione-familiare',
       text: 'Bashkim familijar',
     },
     {
@@ -936,7 +944,7 @@ const services = {
     {
       icon: <Flussi />,
       slug: 'emersione-e-decreto-flussi',
-      text: 'Dekreti i dalses dhe rrsedhës',
+      text: 'EMERSIONE E DECRETO FLUSSI',
     },
     {
       icon: <Legale />,
@@ -1011,6 +1019,11 @@ const services = {
       text: ' الترجمة والاعتراف بالشواهد',
     },
     {
+      icon: <Famiglia />,
+      slug: 'ricongiungimento-e-coesione-familiare',
+      text: 'اعادة توحيد العائلة',
+    },
+    {
       icon: <Spid />,
       slug: 'spid',
       text: 'النظام العام للهوية الرقمية  (SPID)',
@@ -1034,7 +1047,7 @@ const services = {
     {
       icon: <Flussi />,
       slug: 'emersione-e-decreto-flussi',
-      text: ' مرسوم ولوج المهاجرين DECRETO FLUSSI',
+      text: 'EMERSIONE E DECRETO FLUSSI',
     },
     {
       icon: <Legale />,
@@ -1109,6 +1122,8 @@ const services = {
       text: '翻译和 学历认证',
     },
     {
+      icon: <Famiglia />,
+      slug: 'ricongiungimento-e-coesione-familiare',
       text: '家庭团聚',
     },
     {
@@ -1135,7 +1150,7 @@ const services = {
     {
       icon: <Flussi />,
       slug: 'emersione-e-decreto-flussi',
-      text: '劳工申请',
+      text: 'EMERSIONE E DECRETO FLUSSI',
     },
     {
       icon: <Legale />,
