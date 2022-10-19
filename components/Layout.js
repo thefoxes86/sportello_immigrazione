@@ -17,9 +17,11 @@ import Rus from '../images/rus.svg'
 import Ara from '../images/ara.svg'
 import Alb from '../images/alb.svg'
 import Cin from '../images/cin.svg'
+import Fra from '../images/fra.svg'
 import PorteAperte from '../images/porteaperte.svg'
 import { useStore } from '../utils/zustand'
 import Link from 'next/link'
+import { ReactSVG } from 'react'
 
 const options = [
   {
@@ -27,7 +29,7 @@ const options = [
     label: <Flag lang={'IT'} image={<Ita />} />,
   },
   { value: 'eng', label: <Flag lang={'EN'} image={<Eng />} /> },
-
+  { value: 'fra', label: <Flag lang={'FR'} image={<Fra />} /> },
   { value: 'spa', label: <Flag lang={'SP'} image={<Spa />} /> },
   { value: 'rus', label: <Flag lang={'RU'} image={<Rus />} /> },
   { value: 'bra', label: <Flag lang={'BR'} image={<Bra />} /> },
@@ -65,7 +67,7 @@ const Layout = ({ children }) => {
           </Link>
         </div>
         {children}
-        <div className="flex justify-center w-screen py-5">
+        <div className="flex justify-center w-screen py-5 lg:hidden">
           <Earth />
         </div>
         <div className="flex justify-center items-center w-screen py-5 flex-col">
@@ -76,7 +78,7 @@ const Layout = ({ children }) => {
           <p className="text-center text-md py-1">
             Via Sant’Antonio, 34 - 55049 Viareggio (LU)
           </p>
-          <p className="text-center text-md py-1">
+          <p className="text-center text-md py-1 lg:hidden">
             <span className="w-100 block">
               sportelloimmigrazione.vg@gmail.com
             </span>
@@ -84,14 +86,23 @@ const Layout = ({ children }) => {
             <span className="w-100 block">+39 0584 634891</span>
             <span className="w-100 block">+39 371 4244835</span>
           </p>
+          <p className="text-center text-md py-1 hidden lg:block">
+            <span className="w-100 block">
+              sportelloimmigrazione.vg@gmail.com / arciluccaversilia@pec.it
+            </span>
+
+            <span className="w-100 block">
+              +39 0584 634891 / +39 371 4244835
+            </span>
+          </p>
         </div>
         <div className="flex justify-center items-center w-screen py-5">
           <Orari />
         </div>
-        <div className="flex justify-center items-center w-screen py-5">
+        <div className="flex justify-center items-center w-screen">
           <Comune />
         </div>
-        <div className="flex justify-center items-center w-screen py-5 gap-3">
+        <div className="flex justify-center items-center w-screen -mt-3  gap-3">
           <span>
             <Arci />
           </span>

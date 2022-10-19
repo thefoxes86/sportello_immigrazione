@@ -3,7 +3,7 @@
   
   .titleSingle {
     color: var(--green-primary);
-    @apply text-2xl text-left py-9;
+    @apply text-2xl text-left py-9 w-full;
   }
   .titleAra {
     color: var(--green-primary);

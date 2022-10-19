@@ -171,7 +171,7 @@ const services = {
       id: 6,
       icon: <Residenza />,
       slug: 'aggiornamento-documenti-e-cambio-residenza',
-      text: 'AGGIORNAMENTO DOCUMENTI E CAMBIO RESIDENZA',
+      text: 'Aggiornamento documenti e cambio residenza',
       data: {
         documenti: {},
         numberToCall: true,
@@ -181,7 +181,7 @@ const services = {
       id: 7,
       icon: <Certificati />,
       slug: 'prenotazione-certificati-carichi-pendenti',
-      text: 'PRENOTAZIONE CERTIFICATI (CARICHI PENDENTI..)',
+      text: 'Prenotazione certificati (carichi pendenti...)',
       data: {
         documenti: {},
         numberToCall: true,
@@ -191,7 +191,7 @@ const services = {
       id: 8,
       icon: <Corsi />,
       slug: 'iscrizione-corsi-scolastici-ed-esami-di-lingua-da-a1-a-b2',
-      text: 'ISCRIZIONE CORSI SCOLASTICI ED ESAMI DI LINGUA DA A1 A B2',
+      text: 'Iscrizione corsi scolastici ed esami di lingua da A1 a B2',
       data: {
         documenti: {},
         numberToCall: true,
@@ -384,7 +384,7 @@ const services = {
       id: 16,
       icon: <Flussi />,
       slug: 'emersione-e-decreto-flussi',
-      text: 'EMERSIONE E DECRETO FLUSSI',
+      text: 'Emersione e decreto flussi',
       data: {
         documenti: {},
         numberToCall: true,
@@ -522,13 +522,12 @@ const services = {
       icon: <Bonus />,
       slug: 'bonus-e-sussidi',
       text: 'Bonus and benefits',
-      // slug: 'bonus-and-benefits',
     },
     {
       id: 16,
       icon: <Flussi />,
       slug: 'emersione-e-decreto-flussi',
-      text: 'EMERSIONE E DECRETO FLUSSI',
+      text: 'Emersione e decreto flussi',
     },
     {
       id: 17,
@@ -555,6 +554,130 @@ const services = {
       text: 'Consulting',
     },
   ],
+  fra: [
+    {
+      id: 1,
+      icon: <Permesso />,
+      slug: 'rilascio-e-rinnovo-permesso-di-soggiorno',
+      text: 'DÉLIVRANCE / RENOUVELLEMENT DU TITRE DE SÉJOUR',
+    },
+    {
+      id: 2,
+      icon: <Asilo />,
+      slug: 'richiesta-asilo',
+      text: 'DEMANDE DE STATUT DE RÉFUGIÉ',
+    },
+    {
+      id: 3,
+      icon: <Sprar />,
+      slug: 'richiesta-inserimento-sprar-sai',
+      text: "DEMANDE D'INSERTION SPRAR / SAI",
+    },
+    {
+      id: 4,
+      icon: <Casa />,
+      slug: 'ricerca-soluzione-abitativa',
+      text: 'RECHERCHE SOLUTION LOGEMENT',
+    },
+    {
+      id: 5,
+      icon: <Cittadinanza />,
+      slug: 'citadinanza-italiana',
+      text: 'NATIONALITÉ ITALIENNE',
+    },
+    {
+      id: 6,
+      icon: <Residenza />,
+      slug: 'aggiornamento-documenti-e-cambio-residenza',
+      text: 'MISE À JOUR DES DOCUMENTS ET CHANGEMENT DE RÉSIDENCE',
+    },
+    {
+      id: 7,
+      icon: <Certificati />,
+      slug: 'prenotazione-certificati-carichi-pendenti',
+      text: 'CERTIFICAT DE RÉSERVATION CASIER JUDICIAIRE',
+    },
+    {
+      id: 8,
+      icon: <Corsi />,
+      slug: 'iscrizione-corsi-scolastici-ed-esami-di-lingua-da-a1-a-b2',
+      text: 'INSCRIPTION AUX COURS SCOLAIRES ET AUX EXAMENS DE LANGUES DU A1 AU B2',
+    },
+    {
+      id: 9,
+      icon: <Formazione />,
+      slug: 'iscrizione-corsi-di-formazione-professionale',
+      text: 'INSCRIPTION AUX COURS DE FORMATION',
+    },
+    {
+      id: 10,
+      icon: <Studi />,
+      slug: 'traduzione-e-assistenza-nel-riconoscimento-dei-titoli-di-studio',
+      text: 'TRADUCTION ET RECONNAISSANCE DES TITRES',
+    },
+    {
+      id: 11,
+      icon: <Famiglia />,
+      slug: 'ricongiungimento-e-coesione-familiare',
+      text: 'REGROUPEMENT FAMILIAL',
+    },
+    {
+      id: 12,
+      icon: <Spid />,
+      slug: 'spid',
+      text: 'SYSTÈME PUBLIC D’IDENTITÉ NUMÉRQUE (SPID)',
+    },
+    {
+      id: 13,
+      icon: <Isee />,
+      slug: 'isee',
+
+      text: 'INDICATEUR DE SITUATION ÉCONOMIQUE ÉQUIVALENTE ( ISEE )',
+    },
+    {
+      id: 14,
+      icon: <Naspi />,
+      slug: 'naspi',
+      text: 'NOUVELLE ASSURANCE SOCIALE POUR L’EMPLOI ( NASPI )',
+    },
+    {
+      id: 15,
+      icon: <Bonus />,
+      slug: 'bonus-e-sussidi',
+      text: 'BONUS ET SUBVENTIONS',
+    },
+    {
+      id: 16,
+      icon: <Flussi />,
+      slug: 'emersione-e-decreto-flussi',
+      text: 'ÉMERSION ET DÉCRET FLUX',
+    },
+    {
+      id: 17,
+      icon: <Legale />,
+      slug: 'assistenza-legale',
+      text: 'ASSISTANCE LÉGALE',
+    },
+    {
+      id: 18,
+      icon: <Psicologo />,
+      slug: 'assistenza-psicologica',
+      text: 'ASSISTANCE PSYCHOLOGIQUE',
+    },
+    {
+      id: 19,
+      icon: <Lingue />,
+      slug: 'mediazioni-lingue',
+      text: 'MÉDIATIONS LINGUISTIQUES',
+    },
+    {
+      id: 20,
+      icon: <Consulenze />,
+      slug: 'consulenze',
+      text: 'CONSEIL',
+    },
+  ],
+
   rus: [
     {
       icon: <Permesso />,
@@ -635,7 +758,7 @@ const services = {
     {
       icon: <Flussi />,
       slug: 'emersione-e-decreto-flussi',
-      text: 'EMERSIONE E DECRETO FLUSSI',
+      text: 'Emersione e decreto flussi',
     },
     {
       icon: <Legale />,
@@ -738,7 +861,7 @@ const services = {
     {
       icon: <Flussi />,
       slug: 'emersione-e-decreto-flussi',
-      text: 'EMERSIONE E DECRETO FLUSSI',
+      text: 'Emersione e decreto flussi',
     },
     {
       icon: <Legale />,
@@ -841,7 +964,7 @@ const services = {
     {
       icon: <Flussi />,
       slug: 'emersione-e-decreto-flussi',
-      text: 'EMERSIONE E DECRETO FLUSSI',
+      text: 'Emersione e decreto flussi',
     },
     {
       icon: <Legale />,
@@ -944,7 +1067,7 @@ const services = {
     {
       icon: <Flussi />,
       slug: 'emersione-e-decreto-flussi',
-      text: 'EMERSIONE E DECRETO FLUSSI',
+      text: 'Emersione e decreto flussi',
     },
     {
       icon: <Legale />,
@@ -971,7 +1094,7 @@ const services = {
     {
       icon: <Permesso />,
       slug: 'rilascio-e-rinnovo-permesso-di-soggiorno',
-      text: ' اصدار / تجديد تصريح الاقامة',
+      text: 'صدار / تجديد تصريح الاقامة',
     },
     {
       icon: <Asilo />,
@@ -1047,7 +1170,7 @@ const services = {
     {
       icon: <Flussi />,
       slug: 'emersione-e-decreto-flussi',
-      text: 'EMERSIONE E DECRETO FLUSSI',
+      text: 'Emersione e decreto flussi',
     },
     {
       icon: <Legale />,
@@ -1150,7 +1273,7 @@ const services = {
     {
       icon: <Flussi />,
       slug: 'emersione-e-decreto-flussi',
-      text: 'EMERSIONE E DECRETO FLUSSI',
+      text: 'Emersione e decreto flussi',
     },
     {
       icon: <Legale />,

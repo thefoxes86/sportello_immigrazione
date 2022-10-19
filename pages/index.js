@@ -13,7 +13,7 @@ export default function Home() {
 
   return (
     <Layout>
-      <div className="flex justify-center w-screen py-5">
+      <div className="flex justify-center w-screen py-5 lg:hidden ">
         <Omini />
       </div>
       <Title lang={lang.value} />
